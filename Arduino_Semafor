@@ -1,0 +1,14 @@
+void setup() {
+  pinMode(13, OUTPUT); //green led
+  pinMode(14, OUTPUT); //yellow led
+  pinMode(15, OUTPUT); //red led
+}
+
+void loop() {
+  digitalWrite(13, HIGH);
+  digitalWrite(13, LOW);
+  digitalWrite(14, HIGH);
+  digitalWrite(14, LOW);
+  digitalWrite(15, HIGH);
+  digitalWrite(15, LOW);
+}
