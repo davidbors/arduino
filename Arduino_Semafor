@@ -1,13 +1,20 @@
-#primul program
-#gittry
-
 void setup() {
-  pinMode(13, OUTPUT); //a led connected to pin 13
+  pinMode(13, OUTPUT); //green led
+  pinMode(14, OUTPUT); //yellow led
+  pinMode(15, OUTPUT); //red led
 }
 
-void loop(){
-  digitalWrite(13, HIGH); //lights on the led
-  delay(1000); //keeps it light for 1000ms
-  digitalWrite(13, LOW); //lights off the led
-  delay(1000); //keeps it lighted off for 1000ms
+void loop() {
+  digitalWrite(13, HIGH);
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
+  digitalWrite(14, HIGH);
+  delay(1000);
+  digitalWrite(14, LOW);
+  delay(1000);
+  digitalWrite(15, HIGH);
+  delay(1000);
+  digitalWrite(15, LOW);
+  delay(1000);
 }
