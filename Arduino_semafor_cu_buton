@@ -1,0 +1,28 @@
+int buttonpin = 2;
+void setup() {
+  pinMode(13, OUTPUT); //a led connected to pin 13
+  pinMode(12, OUTPUT); //a led connected to pin 11
+  pinMode(8, OUTPUT); //a led connected to pin 8
+  pinMode(buttonpin, INPUT); 
+}
+
+void loop(){
+  if(digitalRead(buttonpin)==HIGH){
+  digitalWrite(13, HIGH); //lights on the led
+  delay(5000);//keeps it light for 1000ms
+  digitalWrite(13, LOW); //lights off the led
+  digitalWrite(12, HIGH); //lights on the led
+  delay(2000);//keeps it light for 1000ms
+  digitalWrite(12, LOW); //lights off the led
+  digitalWrite(8, HIGH); //lights on the led
+  delay(5000);//keeps it light for 1000ms
+  digitalWrite(8, LOW); //lights off the led
+  }
+    else{
+      digitalWrite(13, LOW);
+      digitalWrite(12, LOW);
+      digitalWrite(8, LOW);
+    }
+    
+
+}
