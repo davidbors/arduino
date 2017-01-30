@@ -1,0 +1,106 @@
+int redled = 13;
+int blueled = 12;
+int greenled = 11;
+int redled2 = 10;
+int blueled2 = 9;
+int greenled2 = 8;
+int redled3 = 7;
+int blueled3 = 6;
+int greenled3 = 5;
+int redled4 = 4;
+int blueled4 = 3;
+int greenled4 = 2;
+
+
+void setup() {
+
+  pinMode(redled, OUTPUT);
+  pinMode(blueled, OUTPUT);
+  pinMode(greenled, OUTPUT);
+  pinMode(redled2, OUTPUT);
+  pinMode(blueled2, OUTPUT);
+  pinMode(greenled2, OUTPUT);
+  pinMode(redled3, OUTPUT);
+  pinMode(blueled3, OUTPUT);
+  pinMode(greenled3, OUTPUT);
+  pinMode(redled4, OUTPUT);
+  pinMode(blueled4, OUTPUT);
+  pinMode(greenled4, OUTPUT);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  rgb(255, 0, 0);
+  delay(1000);
+  rgb(255, 255, 0);
+  delay(1000);
+  rgb(0, 0, 255);
+  delay(1000);
+  rgb(80, 0, 80);
+  delay(1000);
+  rgb(0, 255, 255);
+  delay(1000);  
+  rgb2(255, 0, 0);
+  delay(1000);
+  rgb2(255, 255, 0);
+  delay(1000);
+  rgb2(0, 0, 255);
+  delay(1000);
+  rgb2(80, 0, 80);
+  delay(1000);
+  rgb2(0, 255, 255);
+  delay(1000);
+  rgb3(255, 0, 0);
+  delay(1000);
+  rgb3(255, 255, 0);
+  delay(1000);
+  rgb3(0, 0, 255);
+  delay(1000);
+  rgb3(80, 0, 80);
+  delay(1000);
+  rgb3(0, 255, 255);
+  delay(1000);
+  rgb4(255, 0, 0);
+  delay(1000);
+  rgb4(255, 255, 0);
+  delay(1000);
+  rgb4(0, 0, 255);
+  delay(1000);
+  rgb4(80, 0, 80);
+  delay(1000);
+  rgb4(0, 255, 255);
+  delay(1000);
+}
+
+void rgb(int red, int green, int blue){
+  red = 255 - red;
+  green = 255 - green;
+  blue = 255 - blue;
+  analogWrite(redled, red);
+  analogWrite(greenled, green);
+  analogWrite(blueled, blue);
+}
+void rgb2(int red, int green, int blue){
+  red = 255 - red;
+  green = 255 - green;
+  blue = 255 - blue;
+  analogWrite(redled2, red);
+  analogWrite(greenled2, green);
+  analogWrite(blueled2, blue);
+}
+void rgb3(int red, int green, int blue){
+  red = 255 - red;
+  green = 255 - green;
+  blue = 255 - blue;
+  analogWrite(redled3, red);
+  analogWrite(greenled3, green);
+  analogWrite(blueled3, blue);
+}
+void rgb4(int red, int green, int blue){
+  red = 255 - red;
+  green = 255 - green;
+  blue = 255 - blue;
+  analogWrite(redled4, red);
+  analogWrite(greenled4, green);
+  analogWrite(blueled4, blue);
+}
