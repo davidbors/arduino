@@ -1,0 +1,82 @@
+int redled = 12;
+int blueled = 11;
+int greenled = 10;
+int redled2 = 9;
+int blueled2 = 8;
+int greenled2 = 7;
+int redled3 = 6;
+int blueled3 = 5;
+int greenled3 = 4;
+
+void setup() {
+  pinMode(redled, OUTPUT);
+  pinMode(blueled, OUTPUT);
+  pinMode(greenled, OUTPUT);
+  pinMode(redled2, OUTPUT);
+  pinMode(blueled2, OUTPUT);
+  pinMode(greenled2, OUTPUT);
+  pinMode(redled3, OUTPUT);
+  pinMode(blueled3, OUTPUT);
+  pinMode(greenled3, OUTPUT);
+}
+
+void loop() {
+  rgb(255, 0, 0);
+  delay(1000);
+  rgb(255, 255, 0);
+  delay(1000);
+  rgb(0, 0, 255);
+  delay(1000);
+  rgb(80, 0, 80);
+  delay(1000);
+  rgb(0, 255, 255);
+  delay(1000); 
+  rgb2(255, 0, 0);
+  delay(1000);
+  rgb2(255, 255, 0);
+  delay(1000);
+  rgb2(0, 0, 255);
+  delay(1000);
+  rgb2(80, 0, 80);
+  delay(1000);
+  rgb2(0, 255, 255);
+  delay(1000);
+  rgb3(255, 0, 0);
+  delay(1000);
+  rgb3(255, 255, 0);
+  delay(1000);
+  rgb3(0, 0, 255);
+  delay(1000);
+  rgb3(80, 0, 80);
+  delay(1000);
+  rgb3(0, 255, 255);
+  delay(1000);
+}
+
+void rgb(int red, int green, int blue) {
+  red = 255 - red;
+  blue = 255 - blue;
+  green = 255 - green;
+  digitalWrite(redled, red);
+  digitalWrite(blueled, blue);
+  digitalWrite(greenled, green);
+
+}
+void rgb2(int red, int green, int blue) {
+  red = 255 - red;
+  blue = 255 - blue;
+  green = 255 - green;
+  digitalWrite(redled2, red);
+  digitalWrite(blueled2, blue);
+  digitalWrite(greenled2, green);
+
+}
+void rgb3(int red, int green, int blue) {
+  red = 255 - red;
+  blue = 255 - blue;
+  green = 255 - green;
+  digitalWrite(redled3, red);
+  digitalWrite(blueled3, blue);
+  digitalWrite(greenled3, green);
+
+}
