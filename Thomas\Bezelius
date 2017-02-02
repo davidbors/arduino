@@ -1,0 +1,32 @@
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(10,9,6,5,4,3);
+int full = 13;
+int fkey = 2;
+int c = 0;
+
+
+void setup() {
+  pinMode(full,OUTPUT);
+  pinMode(fkey, INPUT);
+  pinMode(12, OUTPUT);
+  lcd.begin(16, 2);
+  digitalWrite(12, HIGH);
+  lcd.print("Thomas este un ");
+  lcd.setCursor(0, 1);
+  lcd.print("grasan urat!");
+}
+
+void loop() {
+  lcd.setCursor(0, 0);
+  if(digitalRead(fkey) == HIGH )
+    c++;
+  if(c>=1)
+  { 
+    digitalWrite(12, LOW);
+    digitalWrite(full, HIGH);
+   lcd.print("Berzelius este");
+  lcd.setCursor(0, 1);
+  lcd.print("un grasan urat!");
+  }
+}
